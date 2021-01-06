@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = "a ruby gem test demo"
   spec.description   = "a demo that practice to create a gem"
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.homepage      = "https://github.com/sai1024/the_where_pre"
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
 
@@ -26,4 +26,9 @@ Gem::Specification.new do |spec|
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
+
+  spec.add_development_dependency "bundler"
+  spec.add_development_dependency "rake", ">= 12.3.3"
+  spec.add_development_dependency "rspec"
+  spec.add_development_dependency "pry"
 end
